@@ -3,7 +3,8 @@
 def call(){
 
     stage('Hi from external'){
-        echo 'Hi from external2'
+        def s = checkout scm;
+        print s.GIT_URL
     }
 
 }
