@@ -2,6 +2,8 @@
 
 def call(){
 
-    echo "hihihihi"
+    stage('Hi from external'){
+        echo 'Hi from external'
+    }
 
 }
