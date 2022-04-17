@@ -3,7 +3,7 @@
 def call(){
 
     stage('Hi from external'){
-        echo 'Hi from external'
+        echo 'Hi from external2'
     }
 
 }
