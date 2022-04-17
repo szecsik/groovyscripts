@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 def call (){
 
     podTemplate(yaml: '''
@@ -30,7 +32,7 @@ def call (){
 '''){
 
         node(POD_LABEL){
-            
+
             stage('Build react project'){
                 container('node'){
                     sh 'npm install'
