@@ -32,6 +32,12 @@ def call (){
 '''){
 
         node(POD_LABEL){
+            
+             stage('GIT Pull'){
+                
+                   checkout scm;
+                
+            }
 
             stage('Build react project'){
                 container('node'){
